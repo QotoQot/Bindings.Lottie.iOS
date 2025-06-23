@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-ios</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <IsBindingProject>true</IsBindingProject>
+    <RootNamespace>QotoQot.Bindings.Lottie.iOS</RootNamespace>
+    <AssemblyName>QotoQot.Bindings.Lottie.iOS</AssemblyName>
+    <IsTrimmable>true</IsTrimmable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.2</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs"/>
+    <ObjcBindingCoreSource Include="StructsAndEnums.cs"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <NativeReference Include="Lottie-Static.xcframework">
+      <Kind>Framework</Kind>
+      <Frameworks>CoreGraphics CoreImage Foundation QuartzCore UIKit</Frameworks>
+    </NativeReference>
+  </ItemGroup>
+</Project>
