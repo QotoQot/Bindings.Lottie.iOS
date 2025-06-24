@@ -12,6 +12,19 @@
   <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.2</Version>
+    <PackageId>QotoQot.Bindings.Lottie.iOS</PackageId>
+    <Title>Lottie iOS Bindings</Title>
+    <Authors>QotoQot</Authors>
+    <Description>.NET 9 bindings for Lottie iOS v4.5.2 (the latest version in Swift)</Description>
+    <PackageTags>lottie;ios;animation;airbnb;aftereffects;dotnet;bindings;xamarin</PackageTags>
+    <PackageProjectUrl>https://qotoqot.com/tech/ios-bindings/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/QotoQot/Bindings.Lottie.iOS</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>Initial release of .NET 9 bindings for Lottie iOS v4.5.2</PackageReleaseNotes>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,5 +37,10 @@
       <Kind>Framework</Kind>
       <Frameworks>CoreGraphics CoreImage Foundation QuartzCore UIKit</Frameworks>
     </NativeReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="LICENSE" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>
